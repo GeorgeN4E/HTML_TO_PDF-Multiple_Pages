@@ -1,0 +1,4 @@
+beautifulsoup4==4.12.3
+pdfkit==1.0.0
+PyPDF2==3.0.1
+Requests==2.32.3

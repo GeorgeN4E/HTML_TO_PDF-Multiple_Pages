@@ -29,7 +29,7 @@ This script converts multiple pages of a website into a single PDF document. It 
 1. Clone this repository or copy the script file.
 2. Install the required libraries using:
    ```bash
-   pip install pdfkit requests beautifulsoup4 PyPDF2
+   pip install requirements.txt
    ```
 3. Download and install `wkhtmltopdf`. Ensure it is accessible in your system or specify the absolute path in the script.
 
@@ -95,6 +95,7 @@ To convert pages from a forum thread:
 ## Error Handling
 - If the script raises `ValueError: No template available for this domain`, add a new template for the website.
 - Check the path to `wkhtmltopdf` if conversion fails.
+- Add PATH in `Enviroment Variables` the default `C:\Program Files\wkhtmltopdf\bin` or `your\path\wkhtmltopdf\bin`
 
 ---
 
