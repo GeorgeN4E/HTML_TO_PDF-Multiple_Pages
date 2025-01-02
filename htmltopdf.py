@@ -17,7 +17,7 @@ def fetch_webpage_title(url):
 
 # Function to convert a single URL to PDF
 def convert_single_page_to_pdf(url, output_file):
-    path_wkhtmltopdf = r'path\to\wkhtmltopdf.exe'  # Adjust this path
+    path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'  # Adjust this path
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdfkit.from_url(url, output_file, configuration=config)
 
@@ -68,10 +68,11 @@ def select_template_func(base_url):
         raise ValueError("No template available for this domain")
 
 # Example usage
-#base_url = 'https://www.digital-kaos.co.uk/forums/showthread.php/495654-new-tuning-edc17-guide'
-#num_pages = 3
-base_url= input("Base url: ")
-num_pages= input("Number of pages: ")
+base_url = 'https://www.digital-kaos.co.uk/forums/showthread.php/495654-new-tuning-edc17-guide'
+num_pages = 3
+
+#base_url= input("Base url: ")
+#num_pages= input("Number of pages: ")
 # Select the appropriate template function
 template_func = select_template_func(base_url)
 
